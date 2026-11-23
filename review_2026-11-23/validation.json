@@ -1,0 +1,42 @@
+[
+  {
+    "case": "replay",
+    "final_Q": 7.55380217148962,
+    "max_abs_Vnorm": 1.5829616399650328,
+    "detected_peaks": 7,
+    "elapsed_s": 2.3755244170315564,
+    "repetition_GHz": 4.8591945039512074,
+    "max_abs_Vnorm_difference_from_saved": 5.411227022023013e-13,
+    "max_abs_Q_difference_from_saved": 1.5898393712632242e-13
+  },
+  {
+    "case": "tighter",
+    "final_Q": 7.553802171488081,
+    "max_abs_Vnorm": 1.582961639965074,
+    "detected_peaks": 7,
+    "elapsed_s": 3.7450004580896348,
+    "repetition_GHz": 4.8591945039512074,
+    "max_abs_Vnorm_difference_from_saved": 5.127231972323898e-12,
+    "max_abs_Q_difference_from_saved": 1.596056620201125e-12
+  },
+  {
+    "case": "no_fluxon",
+    "final_Q": -1.236882376124701e-16,
+    "max_abs_Vnorm": 9.200417547705518e-05,
+    "detected_peaks": 0,
+    "elapsed_s": 1.9367915829643607,
+    "repetition_GHz": null,
+    "max_abs_Vnorm_difference_from_saved": 1.5829616399650306,
+    "max_abs_Q_difference_from_saved": 7.553802171489677
+  },
+  {
+    "case": "no_coupling",
+    "final_Q": 0.0,
+    "max_abs_Vnorm": 0.0,
+    "detected_peaks": 0,
+    "elapsed_s": 1.9092999168206006,
+    "repetition_GHz": null,
+    "max_abs_Vnorm_difference_from_saved": 1.5829616399650308,
+    "max_abs_Q_difference_from_saved": 7.553802171489677
+  }
+]

@@ -1,0 +1,45 @@
+Physical scales
+================
+PHI0_Wb: 2.067833848e-15
+PHI0_REDUCED_Wb: 3.2910597840193497e-16
+J_C_kA_per_cm2: 0.1
+C_SPEC_pF_per_um2: 0.06
+A_LJJ_um2: 115.0
+IC_L_PHYS_A: 0.00011499999999999999
+C_L_PHYS_F: 6.899999999999999e-12
+OMEGA_PL_rad_s: 225038326233.40793
+F_PL_Hz: 35815962005.173416
+V_SCALE_V: 7.406145853297954e-05
+V_SCALE_mV: 0.07406145853297953
+F_J_TARGET_Hz: 5000000000.0
+V_TARGET_PHYS_V: 1.033916924e-05
+V_TARGET_NORM: 0.1396025604248122
+
+Parameters
+==========
+M: 65
+alpha_L: 0.2
+gamma_L: 0.6
+l_L: 0.1
+n_fluxons: 1
+fluxon_cells: [20]
+fluxon_velocity: 0.9
+fluxon_direction: right
+N_JTL: 5
+m_J: 1.0
+s_J: 1.0
+alpha_J: 1
+gamma_J: 0.7
+l_J: 9.0
+kappa: 2
+tau_end: 400.0
+n_eval: 2500
+rtol: 1e-06
+atol: 1e-08
+max_step: 0.05
+method: DOP853
+results_dir: ljj_capacitive_jtl_results
+save_animation: True
+show_plots: True
+animation_frames: 400
+animation_interval_ms: 25
