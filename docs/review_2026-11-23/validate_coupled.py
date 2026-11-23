@@ -12,7 +12,7 @@ from scipy.integrate import solve_ivp
 from scipy.signal import find_peaks
 
 HERE=Path(__file__).resolve().parent
-ROOT=HERE.parent
+ROOT=HERE.parents[1]
 sys.dont_write_bytecode=True
 spec=importlib.util.spec_from_file_location('ljj_reference',ROOT/'ljj_capacitive_jtl_final_calculated_params.py')
 mod=importlib.util.module_from_spec(spec)

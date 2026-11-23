@@ -1,6 +1,6 @@
 """Re-analyze saved outputs without running or modifying the simulations.
 
-Run from any directory: python review_2026-11-23/analyze_results.py
+Run from any directory: python docs/review_2026-11-23/analyze_results.py
 Requires numpy, scipy and matplotlib. Derived outputs stay in this folder.
 """
 from pathlib import Path
@@ -20,7 +20,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
 
 HERE = Path(__file__).resolve().parent
-ROOT = HERE.parent
+ROOT = HERE.parents[1]
 FIG = HERE / 'figures'
 FIG.mkdir(exist_ok=True)
 PHI0 = 2.067833848e-15
@@ -46,7 +46,7 @@ def serial(value):
     raise TypeError(type(value).__name__)
 
 
-inputs = sorted([*ROOT.glob('*.py'), *ROOT.glob('*.png'),
+inputs = sorted([*ROOT.glob('*.py'), *(ROOT/'figures').glob('*.png'),
                  *(ROOT/'iv_fluxon_results').glob('*'),
                  *(ROOT/'ljj_capacitive_jtl_results').glob('*/*')])
 inputs = [p for p in inputs if p.is_file() and p.name != '.DS_Store']
